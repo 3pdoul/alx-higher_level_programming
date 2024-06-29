@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const array = process.argv;
-if (array.length > 2) {
+if (!isNaN(array[2]) && (array.length > 2)) {
   let s = '';
   for (let i = 0; i < array[2]; i++) {
     s += 'X';
