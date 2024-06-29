@@ -4,7 +4,6 @@ if (array.length > 2) {
   for (let i = 0; i < array[2]; i++) {
     console.log('C is fun');
   }
-}
-else {
+} else {
   console.log('Missing number of occurrences');
 }
