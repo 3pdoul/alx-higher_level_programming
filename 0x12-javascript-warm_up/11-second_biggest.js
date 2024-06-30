@@ -7,11 +7,11 @@ if (array.length < 4) {
   console.log(0);
 } else {
   for (let i = 2; i < array.length; i++) {
-    if (array[i] > Max) {
+    if (Number(array[i]) > Max) {
       secMax = Max;
       Max = array[i];
     } else {
-      if (array[i] > secMax) {
+      if (Number(array[i]) > secMax) {
         secMax = array[i];
       }
     }
