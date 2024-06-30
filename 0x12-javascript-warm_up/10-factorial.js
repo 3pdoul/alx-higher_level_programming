@@ -3,10 +3,16 @@ const array = process.argv;
 if ((array.length < 3)) {
   console.log(Number(1));
 } else {
-  let sum = 1;
-  for (let i = 1; i < (array[2]); i++) {
-    sum = sum * i;
+  console.log(fac(Number(array[2])));
+}
+
+function fac(num) {
+  if (num === 0) {
+    return (1);
+  } else if (num === 1) {
+    return (1);
   }
-  sum = sum * array[2];
-  console.log(sum);
+  else {
+	  return (num * fac(num-1)); 
+  }
 }
