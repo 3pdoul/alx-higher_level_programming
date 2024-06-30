@@ -1,19 +1,21 @@
 #!/usr/bin/node
 const myObject = {
   type: 'object',
-  value: 12,
-  incr: function() {
-    this.value++;
-  }
+  value: 12
 };
 
-console.log(myObject);  // Initial state of the object
+console.log(myObject);
+
+// Adding the incr function to myObject
+myObject.incr = function() {
+  this.value += 1;
+};
 
 myObject.incr();
-console.log(myObject);  // After first increment
+console.log(myObject);
 
 myObject.incr();
-console.log(myObject);  // After second increment
+console.log(myObject);
 
 myObject.incr();
-console.log(myObject);  // After third increment
+console.log(myObject);
